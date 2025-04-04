@@ -1,0 +1,33 @@
+{
+	"name": "@objectfoo/scaffold",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "run-s lint compile test",
+		"lint": "eslint --no-error-on-unmatched-pattern ./ src --ext .ts --ext .tsx",
+		"compile": "tsc --project tsconfig.json",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "@objectfoo",
+	"license": "ISC",
+	"description": "",
+	"volta": {
+		"node": "22.14.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.23.0",
+		"@stylistic/eslint-plugin": "^4.2.0",
+		"eslint": "^9.23.0",
+		"npm-run-all2": "^7.0.2",
+		"typescript": "^5.8.2",
+		"typescript-eslint": "^8.29.0"
+	}
+}
