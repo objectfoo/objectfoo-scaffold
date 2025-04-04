@@ -7,7 +7,11 @@ export default function (plop) {
 			{ type: "input", name: "description", message: "module description please" },
 		],
 		actions: [
-			{ type: "addMany", destination: ".", templateFile: "./plop-templates/scaffold/**/*" },
+			{
+				type: "addMany",
+				destination: "./",
+				templateFile: "./plop-templates/scaffold",
+			},
 		],
 	});
 };
