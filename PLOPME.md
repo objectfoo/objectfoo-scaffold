@@ -10,7 +10,7 @@ Use degit and plop to scaffold a project.
 ```sh
 # clone the repo
 # into new folder new-thing
-npx degit github:objectfoo/objectfoo-scaffold new-thing
+npx degit github:objectfoo/objectfoo-scaffold#master new-thing
 
 # run the templates
 # run the scaffold generator with positional input
