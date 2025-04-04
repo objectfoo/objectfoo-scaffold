@@ -23,8 +23,8 @@ export default tsEslint.config(
 	{ ignores: ["node_modules", "dist"] },
 	eslint.configs.recommended,
 	stylistic.configs.customize({ quotes: "double", indent: "tab", semi: true, commaDangle: "always-multiline" }),
-	{ files: ["**/*.mjs", "**/*.js"], languageOptions: languageOptions.esm },
-	{ files: ["**/*.cjs"], languageOptions: languageOptions.cjs },
+	{ files: ["**/*.mjs"], languageOptions: languageOptions.esm },
+	{ files: ["**/*.cjs", "**/*.js"], languageOptions: languageOptions.cjs },
 	{
 		files: ["**/*.ts", "**/*.tsx"],
 		extends: [tsEslint.configs.recommendedTypeChecked, tsEslint.configs.eslintRecommended],
