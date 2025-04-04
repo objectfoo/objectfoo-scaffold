@@ -1,5 +1,4 @@
 export default function (plop) {
-	// controller generator
 	plop.setGenerator("scaffold", {
 		description: "scaffold node-module",
 		prompts: [
@@ -10,8 +9,12 @@ export default function (plop) {
 			{
 				type: "addMany",
 				destination: "./",
-				templateFile: "./plop-templates/scaffold",
+				skipIfExists: true,
+				base: "./plop-templates/scaffold/",
+				templateFiles: "./plop-templates/scaffold/**/*",
+				abortOnFail: true,
 			},
 		],
 	});
 };
+
